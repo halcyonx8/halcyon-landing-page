@@ -5,10 +5,62 @@
 }
 
 body {
-    font-family: Arial, Arial, Helvetica, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #f8fafc;
-    background-color: #0f172a;
+    color: #000;
+    background-color: #fff;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.navbar {
+    background: #fff;
+    border-bottom: 1px solid rgb(0,0,0);
+    color: #000;
+    height: 120px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar a:hover {
+    color: rgb(180,180,180);
+}
+
+.navbar nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar ul {
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.navbar ul li {
+    margin-left: 25px;
+    list-style-type: none;
+}
+
+.navbar .logo {
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 5rem;
+    letter-spacing: 1px;
+    user-select: none;
 }
 
 header {
@@ -20,20 +72,26 @@ header {
 
 main {
     flex: 1;
+    display: flex;
+    align-items: stretch;
 }
 
 footer {
-    background-color: #0f172a;
-    color: #CCCCCC;
+    background-color: #fff;
+    color: #000;
     text-align: center;
     padding: 1em 0;
     width: 100%;
+    border-top: 1px solid rgb(0,0,0);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-style: italic;
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh
+    min-height: 100vh;
 }
 
 h1 {
@@ -61,4 +119,26 @@ header .tagline{
     font-size: 1.2em;
     color:#CCCCCC;
     font-style: italic;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.bio, .journal {
+  flex: 1;
+  padding: 1rem 2rem;
+}
+
+.divider {
+  width: 1px;
+  background-color: black;
+  flex-shrink: 0;
+  align-self: stretch;
 }
