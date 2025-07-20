@@ -8,20 +8,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Halcyon's personal dev journey and project showcase.">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,600;1,900&display=swap">
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <title>The Halcyon Project</title>
+    <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg">
+    <link rel="shortcut icon" href="favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Halcyon">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <title>Halcyon</title>
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
-<body>
+<body class="fade-in">
 
     <div class="wrapper">
 
         <nav class="navbar">
             <div class="container">
                 <div class="logo">HALCYON</div>
-                <ul class="nav">
+                <ul class="nav-links">
                     <li>
                         <a href="#">Home</a>
                     </li>
@@ -29,9 +34,10 @@
                         <a href="#journal">Journal</a>
                     </li>
                     <li>
-                        <a href="https://github.com/halcyonx8" target="_blank">My GitHub</a>
+                        <a href="https://github.com/halcyonx8" target="_blank">Github</a>
                     </li>
                 </ul>
+                <img src="images/profile.png" alt="Profile photo" class="profile-pic">
             </div>
         </nav>
 
@@ -45,16 +51,19 @@
             </div>
 
             <div class="section_margin-bottom">
-                <p><small>The beginning: 10th of July, 2025.</small></p>
+                <p><small><i>The beginning: 10th of July, 2025.</i></small></p>
             </div>
           </div>
 
           <div class="divider"></div>
             <div class="journal">
-                <h2>My progress journal.</h2>
+                <h2>Progress Journal</h2>
                 <ul class="section_ul">
                     <li>
-                        <p>Day 1-2: Learned HTML structure, basic CSS styling. Built a landing page that contains info and a GitHub link. Site deployed to GitHub Pages.</p>
+                        <p class="journal-entry">Day 1: Learned <b>HTML</b> structure, basic <b>CSS</b> styling. Built a landing page that contains info and a GitHub link. Site deployed to GitHub Pages.</p>
+                    </li>
+                    <li>
+                        <p class="journal-entry">Day 2: Discovered <b>CSS Flexbox</b>, used some parts of said Flexbox. Added navbar, created a side-by-side layout for biography and journal. Ability to constantly push updates to page.</p>
                     </li>
                 </ul>
             </div>
@@ -68,6 +77,8 @@
 
     </div>
 
+
+    <script="script.js" refer></script>
 </body>
 
 </html>
